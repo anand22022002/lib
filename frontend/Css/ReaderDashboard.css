@@ -1,0 +1,262 @@
+/* .reader-box {
+
+  background: #F7971E;
+
+  background: -webkit-linear-gradient(to right, #FFD200, #F7971E);
+ 
+  background: linear-gradient(to right, #FFD200, #F7971E);
+  
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+}
+
+
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+
+.reader-dashboard-container {
+  width: 100% ;
+  padding: 2% 0%;
+  text-align: center;
+  color: white;
+}
+.reader-dashboard-container h2{
+  color: black;
+}
+
+.search-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px ;
+  width: 80%;
+}
+
+.book-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.book-card {
+  width: 250px;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: black;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.book-card h3 {
+  margin-bottom: 10px;
+}
+
+.book-availability {
+  font-weight: bold;
+}
+
+.book-availability.available {
+  color: green;
+}
+
+.book-availability.not-available {
+  color: red;
+}
+
+.borrow-button {
+  background-color: #28a745;
+  color: white;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.borrow-button:disabled {
+  background-color: #ccc;
+}
+
+.search-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background: white;
+
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.popup-content {
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+} */
+
+
+.reader-box {
+  background: linear-gradient(to right, #FFD200, #F7971E);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reader-dashboard-container {
+  width: 100%;
+  padding: 2% 0%;
+  text-align: center;
+  color: white;
+}
+
+.reader-dashboard-container h2 {
+  color: black;
+}
+
+.search-button {
+  background-color: black;
+  color: #FFD200;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+  width: 80%;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.search-button:hover {
+  background-color: rgb(27, 25, 25);
+}
+
+.book-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.book-card {
+  width: 250px;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: black;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0);
+  text-align: center;
+  color: white;
+}
+
+.book-card h3 {
+  margin-bottom: 10px;
+  color: #FFD200;
+}
+
+.book-availability {
+  font-weight: bold;
+}
+
+.book-availability.available {
+  color: green;
+}
+
+.book-availability.not-available {
+  color: red;
+}
+
+.borrow-button {
+  background-color: #FFD200;
+  color: black;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.borrow-button:hover {
+  background-color: rgb(40, 109, 15);
+  color: #2d270b;
+}
+
+.borrow-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Search Popup Overlay */
+.search-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* Search Popup */
+.search-popup {
+  width: 400px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(255, 215, 0, 0.5);
+  text-align: center;
+  position: relative;
+}
+
+.popup-content h3 {
+  margin-bottom: 15px;
+  color: black;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: red;
+  color: white;
+  width:30px;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close-button:hover {
+  background: darkred;
+}
