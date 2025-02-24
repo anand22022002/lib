@@ -55,3 +55,17 @@ TestGetAdmins – Successfully retrieved all admins
 TestUpdateUser – Successfully updated user information (ID: 1)
 
 TestDeleteUser – Successfully deleted user (ID: 1)
+
+📊 Summary
+
+✔ Total Tests Run: 18✅ Passed: 18❌ Failed: 0⚠️ Warnings: Some records not found but did not affect test results
+
+📜 How to Run Tests
+
+To execute the test suite, use the following command:
+
+ go test -v ./...
+
+To run a specific test:
+ go test -run TestSignup
+Overall, the test suite ran successfully with no failures, but some database queries need review. 🚀
